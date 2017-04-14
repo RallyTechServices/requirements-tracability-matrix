@@ -1,8 +1,22 @@
-#Requirements Traceability Matrix
+#Requirements Traceability Matrix [IN-PROGRESS]
 
 ## Summary/Description
 
 ![screenshot](./images/screenshot.png "This is an example")
+
+This app provides the ability configuration of an export to support requirements traceability for a selected 2nd level portfolio item (Initiative)
+
+The "Views" determine what is exported and what the column name mappings are.  
+
+This app will export a User Story per row for the selected "Initiative" 
+
+Each view has configuration for the following: 
+Column Name: The header of the column in the Export
+Related Object Type: If the field to be mapped to the column is NOT on the User Story, then the field will be pulled from the related Object type.
+Field Mapping:  The field to map to the column from the user story (if no Related Object Type is selected) or the selected Related Object Type.  
+
+If the Related Object Type == TestCases, then the values from the selected field for each Test Case associated with the User Story will be concatenated inside of the cell for the row.  
+
 
 ## Development Notes
 
