@@ -38,6 +38,7 @@ Ext.define("requirements-traceability-matrix", {
     portfolioItemTypes: ['PortfolioItem/Feature','PortfolioItem/Initiative'],
 
     launch: function() {
+        //TODO: Load portfolio Item types and views
         this._addComponents();
     },
     _addComponents: function(){
@@ -118,6 +119,7 @@ Ext.define("requirements-traceability-matrix", {
     enableExportButton: function(){
         var enable = this.down('#cbPortfolioItem') && this.down('#cbPortfolioItem').getValue() &&
                 this.down('#cbView') && this.down('#cbView').getValue() ? true : false;
+
         if (this.down('#btExport')){
             this.down('#btExport').setDisabled(!enable);
         }
